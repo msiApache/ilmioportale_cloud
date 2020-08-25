@@ -1,0 +1,363 @@
+<!-- MODAL RICERCA VEICOLO -->
+<div class="modal fade" id="ricercaVeicolo" tabindex="-1" role="dialog" aria-labelledby="modalVeicolo"
+     aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalVeicolo">Ricerca veicolo :</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form method="post" action="/gestionale.php">
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">ID VEICOLO :</span>
+                        </div>
+                        <input type="search" class="form-control" name="id" value="">
+                        <button class="btn btn-primary" type="submit" name="searchVehicles"
+                                style="margin-left: 10px; width: 5em">
+                            Cerca
+                        </button>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Esci</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END MODAL RICERCA VEICOLO -->
+<!-- MODAL INSERIMENTO NUOVO VEICOLO -->
+<div class="modal fade" id="inserimentoNuovoVeicolo" tabindex="-1" role="dialog"
+     aria-labelledby="modalNuovoVeicolo"
+     aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalNuovoVeicolo">Inserisci dati nuovo veicolo :</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form method="post" action="/gestionale.php">
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">CLASSE :</span>
+                        </div>
+                        <input type="text" class="form-control" name="classe" value="">
+                    </div>
+                    <div class="input-group" style="padding-top: 20px">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">TARGA :</span>
+                        </div>
+                        <input type="text" class="form-control" name="targa" value="">
+                    </div>
+                    <div class="input-group" style="padding-top: 20px">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">MODELLO :</span>
+                        </div>
+                        <input type="text" class="form-control" name="modello" value="">
+                    </div>
+                    <div class="input-group" style="padding-top: 20px">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">SCADENZA ASSICURAZIONE :</span>
+                        </div>
+                        <input type="date" class="form-control" name="scad_assicurazione" value="">
+                    </div>
+                    <div class="input-group" style="padding-top: 20px">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">SCADENZA BOLLO :</span>
+                        </div>
+                        <input type="date" class="form-control" name="scad_bollo" value="">
+                    </div>
+                    <div class="input-group" style="padding-top: 20px">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">SCADENZA REVISIONE :</span>
+                        </div>
+                        <input type="date" class="form-control" name="scad_revisione" value="">
+                    </div>
+                    <div class="input-group" style="padding-top: 20px">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">KM ULTIMA REVISIONE :</span>
+                        </div>
+                        <input type="number" class="form-control" name="km_ult_rev" value="">
+                    </div>
+                    <div class="input-group" style="padding-top: 20px">
+                        <button class="btn btn-primary" type="submit" name="insertSubmitVehicles">Inserisci
+                        </button>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Esci</button>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<!-- END MODAL INSERIMENTO NUOVO VEICOLO -->
+<!-- MODAL AGGIORNAMENTO DATI VEICOLO  -->
+<div class="modal fade" id="aggioramentoDatiVeicolo" tabindex="-1" role="dialog"
+     aria-labelledby="modalAggiornamentoVeicolo"
+     aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalAggiornamentoVeicolo">Aggiorna dati veicolo :</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form method="post" action="/gestionale.php">
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">ID VEICOLO :</span>
+                        </div>
+                        <input type="text" class="form-control" name="id" value="">
+                    </div>
+                    <div class="input-group" style="padding-top: 20px">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">CLASSE :</span>
+                        </div>
+                        <input type="text" class="form-control" name="classe" value="">
+                    </div>
+                    <div class="input-group" style="padding-top: 20px">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">TARGA :</span>
+                        </div>
+                        <input type="text" class="form-control" name="targa" value="">
+                    </div>
+                    <div class="input-group" style="padding-top: 20px">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">MODELLO :</span>
+                        </div>
+                        <input type="text" class="form-control" name="modello" value="">
+                    </div>
+                    <div class="input-group" style="padding-top: 20px">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">SCADENZA ASSICURAZIONE :</span>
+                        </div>
+                        <input type="date" class="form-control" name="scad_assicurazione" value="">
+                    </div>
+                    <div class="input-group" style="padding-top: 20px">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">SCADENZA BOLLO :</span>
+                        </div>
+                        <input type="date" class="form-control" name="scad_bollo" value="">
+                    </div>
+                    <div class="input-group" style="padding-top: 20px">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">SCADENZA REVISIONE :</span>
+                        </div>
+                        <input type="date" class="form-control" name="scad_revisione" value="">
+                    </div>
+                    <div class="input-group" style="padding-top: 20px">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">KM ULTIMA REVISIONE :</span>
+                        </div>
+                        <input type="number" class="form-control" name="km_ult_rev" value="">
+                    </div>
+                    <div class="input-group" style="padding-top: 20px">
+                        <button class="btn btn-primary" type="submit" name="updateSubmitVehicles">Aggiorna
+                        </button>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Esci</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END MODAL AGGIORNAMENTO DATI VEICOLO -->
+
+<!-- MODAL CANCELLAZIONE VEICOLO -->
+<div class="modal fade" id="cancellazioneVeicolo" tabindex="-1" role="dialog"
+     aria-labelledby="cancellazioneDatiVeicolo"
+     aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="cancellazioneDatiVeicolo">Cancella dati veicolo :</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form method="post" action="/gestionale.php">
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">ID VEICOLO :</span>
+                        </div>
+                        <input type="search" class="form-control" name="id" value="">
+                        <button class="btn btn-primary" type="submit" name="deleteSubmitVehicles"
+                                style="margin-left: 10px; width: 5em">
+                            Cancella
+                        </button>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Esci</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END MODAL CANCELLAZIONE VEICOLO -->
+
+
+<!-- MODAL RICERCA UTENTE -->
+<div class="modal fade" id="ricercaUtente" tabindex="-1" role="dialog" aria-labelledby="modalUtente"
+     aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalUtente">Ricerca account :</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form method="post" action="/gestionale.php">
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">ID UTENTE :</span>
+                        </div>
+                        <input type="search" class="form-control" name="id" value="">
+                        <button class="btn btn-success" type="submit" name="searchUtenti"
+                                style="margin-left: 10px; width: 5em">
+                            Cerca
+                        </button>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Esci</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END MODAL RICERCA UTENTE -->
+<!-- ############################################################################################################### -->
+<!-- MODAL INSERIMENTO NUOVO UTENTE -->
+<div class="modal fade" id="inserimentoNuovoUtente" tabindex="-1" role="dialog"
+     aria-labelledby="modalNuovoUtente"
+     aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalNuovoUtente">Inserisci nuovo account :</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form method="post" action="/gestionale.php">
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">USERNAME :</span>
+                        </div>
+                        <input type="text" class="form-control" name="username" value="">
+                    </div>
+                    <div class="input-group" style="padding-top: 20px">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">PASSWORD :</span>
+                        </div>
+                        <input type="text" class="form-control" name="password" value="">
+                    </div>
+                    <div class="input-group" style="padding-top: 20px">
+                        <button class="btn btn-success" type="submit" name="insertSubmitUsers">Inserisci
+                        </button>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Esci</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END MODAL INSERIMENTO NUOVO UTENTE -->
+<!-- MODAL INSERIMENTO UTENTE -->
+<div class="modal fade" id="aggiornamentoUtente" tabindex="-1" role="dialog"
+     aria-labelledby="modalaggiornamentoUtente"
+     aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalaggiornamentoUtente">Aggiorna account :</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form method="post" action="/gestionale.php">
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">ID ACCOUNT :</span>
+                        </div>
+                        <input type="text" class="form-control" name="id" value="">
+                    </div>
+                    <div class="input-group" style="padding-top: 20px">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">USERNAME :</span>
+                        </div>
+                        <input type="text" class="form-control" name="username" value="">
+                    </div>
+                    <div class="input-group" style="padding-top: 20px">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">PASSWORD :</span>
+                        </div>
+                        <input type="text" class="form-control" name="password" value="">
+                    </div>
+                    <div class="input-group" style="padding-top: 20px">
+                        <button class="btn btn-success" type="submit" name="updateSubmitUsers">Aggiorna
+                        </button>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Esci</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END MODAL AGGIORNAMENTO UTENTE -->
+<!-- MODAL CANCELLAZIONE UTENTE -->
+<div class="modal fade" id="cancellazioneUtente" tabindex="-1" role="dialog"
+     aria-labelledby="cancellazioneDatiUtente"
+     aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="cancellazioneDatiUtente">Cancella account :</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form method="post" action="/gestionale.php">
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">ID ACCOUNT :</span>
+                        </div>
+                        <input type="search" class="form-control" name="id" value="">
+                        <button class="btn btn-success" type="submit" name="deleteSubmitUsers"
+                                style="margin-left: 10px; width: 5em">
+                            Cancella
+                        </button>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Esci</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END MODAL CANCELLAZIONE UTENTE -->

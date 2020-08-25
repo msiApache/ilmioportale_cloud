@@ -1,0 +1,204 @@
+<div class="container wrapperRow">
+    <h3 class="h3Vehicles">VEICOLI :</h3>
+    <div class="card-deck mb-3 text-center">
+        <div class="card mb-4 shadow-sm">
+            <div class="card-header">
+                <h4 class="my-0 font-weight-normal">Lista veicoli</h4>
+            </div>
+            <div class="card-body">
+                <form method="post" action="/gestionale.php">
+                    <div class="input-group">
+                        <button class="btn btn-lg btn-block btn-primary" type="submit" name="submitListaVeicoli">
+                            LISTA
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="card mb-4 shadow-sm">
+            <div class="card-header">
+                <h4 class="my-0 font-weight-normal">Ricerca veicolo</h4>
+            </div>
+            <div class="card-body">
+                <button type="button" class="btn btn-lg btn-block btn-primary" data-toggle="modal"
+                        data-target="#ricercaVeicolo">RICERCA
+                </button>
+            </div>
+        </div>
+        <div class="card mb-4 shadow-sm">
+            <div class="card-header">
+                <h4 class="my-0 font-weight-normal">Inserisci nuovo veicolo</h4>
+            </div>
+            <div class="card-body">
+                <button type="button" class="btn btn-lg btn-block btn-primary" data-toggle="modal"
+                        data-target="#inserimentoNuovoVeicolo">INSERISCI
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="card-deck mb-3 text-center">
+        <div class="card mb-4 shadow-sm">
+            <div class="card-header">
+                <h4 class="my-0 font-weight-normal">Aggiorna dati veicolo</h4>
+            </div>
+            <div class="card-body">
+                <form method="post" action="/gestionale.php">
+                    <div class="input-group">
+                        <button type="button" class="btn btn-lg btn-block btn-primary" data-toggle="modal"
+                                data-target="#aggioramentoDatiVeicolo">
+                            AGGIORNA
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="card mb-4 shadow-sm">
+            <div class="card-header">
+                <h4 class="my-0 font-weight-normal">Cancella dati veicolo</h4>
+            </div>
+            <div class="card-body">
+                <button type="button" class="btn btn-lg btn-block btn-primary" data-toggle="modal"
+                        data-target="#cancellazioneVeicolo">
+                    CANCELLA
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <h3 class="h3Account">ACCOUNT :</h3>
+    <div class="card-deck mb-3 text-center">
+        <div class="card mb-4 shadow-sm">
+            <div class="card-header">
+                <h4 class="my-0 font-weight-normal">Lista account</h4>
+            </div>
+            <div class="card-body">
+                <form method="post" action="/gestionale.php">
+                    <div class="input-group">
+                        <button class="btn btn-lg btn-block btn-success" type="submit" name="submitListaUtenti">
+                            LISTA
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="card mb-4 shadow-sm">
+            <div class="card-header">
+                <h4 class="my-0 font-weight-normal">Ricerca account</h4>
+            </div>
+            <div class="card-body">
+                <button type="button" class="btn btn-lg btn-block btn-success" data-toggle="modal"
+                        data-target="#ricercaUtente">RICERCA
+                </button>
+            </div>
+        </div>
+        <div class="card mb-4 shadow-sm">
+            <div class="card-header">
+                <h4 class="my-0 font-weight-normal">Inserisci nuovo account</h4>
+            </div>
+            <div class="card-body">
+                <button type="button" class="btn btn-lg btn-block btn-success" data-toggle="modal"
+                        data-target="#inserimentoNuovoUtente">INSERISCI
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="card-deck mb-3 text-center">
+        <div class="card mb-4 shadow-sm">
+            <div class="card-header">
+                <h4 class="my-0 font-weight-normal">Aggiorna dati account</h4>
+            </div>
+            <div class="card-body">
+                <form method="post" action="/gestionale.php">
+                    <div class="input-group">
+                        <button type="button" class="btn btn-lg btn-block btn-success" data-toggle="modal"
+                                data-target="#aggiornamentoUtente">
+                            AGGIORNA
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="card mb-4 shadow-sm">
+            <div class="card-header">
+                <h4 class="my-0 font-weight-normal">Cancella account</h4>
+            </div>
+            <div class="card-body">
+                <button type="button" class="btn btn-lg btn-block btn-success" data-toggle="modal"
+                        data-target="#cancellazioneUtente">
+                    CANCELLA
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container">
+    <h3 class="h3Account" style="color: #138496">SEND MAIL :</h3>
+    <div class="card-deck mb-3 text-center">
+        <div class="card mb-4 shadow-sm">
+            <div class="card-header">
+                <h4 class="my-0 font-weight-normal">Invio Mail Aprilia Pegaso</h4>
+            </div>
+            <div class="card-body">
+                <form method="post" action="/gestionale.php">
+                    <div class="input-group">
+                        <button class="btn btn-lg btn-block btn-info" type="submit" name="mailApriliaPegaso">
+                            INVIA
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="card mb-4 shadow-sm">
+            <div class="card-header">
+                <h4 class="my-0 font-weight-normal">Invio Mail Suzuki GSR</h4>
+            </div>
+            <div class="card-body">
+                <form method="post" action="/gestionale.php">
+                    <div class="input-group">
+                        <button class="btn btn-lg btn-block btn-info" type="submit" name="mailSuzukiGsr">
+                            INVIA
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="card mb-4 shadow-sm">
+            <div class="card-header">
+                <h4 class="my-0 font-weight-normal">Invio Mail Opel Astra H</h4>
+            </div>
+            <div class="card-body">
+                <form method="post" action="/gestionale.php">
+                    <div class="input-group">
+                        <button class="btn btn-lg btn-block btn-info" type="submit" name="mailOpelAstra">
+                            INVIA
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="card mb-4 shadow-sm">
+            <div class="card-header">
+                <h4 class="my-0 font-weight-normal">Invio Mail Opel Insignia</h4>
+            </div>
+            <div class="card-body">
+                <form method="post" action="/gestionale.php">
+                    <div class="input-group">
+                        <button class="btn btn-lg btn-block btn-info" type="submit" name="mailOpelInsignia">
+                            INVIA
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
